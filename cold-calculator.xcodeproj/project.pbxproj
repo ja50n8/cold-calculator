@@ -12,6 +12,8 @@
 		C66B08C61D2CF9680095A0C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66B08C41D2CF9680095A0C9 /* Main.storyboard */; };
 		C66B08C81D2CF9680095A0C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C66B08C71D2CF9680095A0C9 /* Assets.xcassets */; };
 		C66B08CB1D2CF9680095A0C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66B08C91D2CF9680095A0C9 /* LaunchScreen.storyboard */; };
+		C6967C6C1D2D0B20007A8CE3 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6967C6B1D2D0B20007A8CE3 /* Minecraft.ttf */; };
+		C6967C6E1D2D1F9D007A8CE3 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = C6967C6D1D2D1F9D007A8CE3 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C66B08C71D2CF9680095A0C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C66B08CA1D2CF9680095A0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C66B08CC1D2CF9680095A0C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6967C6B1D2D0B20007A8CE3 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		C6967C6D1D2D1F9D007A8CE3 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		C66B08BF1D2CF9680095A0C9 /* cold-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C6967C6B1D2D0B20007A8CE3 /* Minecraft.ttf */,
+				C6967C6D1D2D1F9D007A8CE3 /* btn.wav */,
 				C66B08C01D2CF9680095A0C9 /* AppDelegate.swift */,
 				C66B08C21D2CF9680095A0C9 /* ViewController.swift */,
 				C66B08C41D2CF9680095A0C9 /* Main.storyboard */,
@@ -97,6 +103,7 @@
 					C66B08BC1D2CF9680095A0C9 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = GC7YN82RH4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -123,8 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6967C6E1D2D1F9D007A8CE3 /* btn.wav in Resources */,
 				C66B08CB1D2CF9680095A0C9 /* LaunchScreen.storyboard in Resources */,
 				C66B08C81D2CF9680095A0C9 /* Assets.xcassets in Resources */,
+				C6967C6C1D2D0B20007A8CE3 /* Minecraft.ttf in Resources */,
 				C66B08C61D2CF9680095A0C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +209,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -239,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -251,9 +260,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "cold-calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cold.cold-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -262,9 +273,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "cold-calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cold.cold-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -287,6 +300,7 @@
 				C66B08D11D2CF9680095A0C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
